@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalToolKit - All-in-One File Conversion & Optimization</title>
+    <meta name="description" content="Free online tools for PDF and image processing. Convert, compress, edit, and optimize your files with our comprehensive toolkit.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #4f46e5;
+            --accent-color: #7c3aed;
+            --text-color: #1e293b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .header {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 6rem 1rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        .tool-grid {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tool-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .tool-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .search-bar {
+            max-width: 600px;
+            margin: 2rem auto;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            border: 2px solid #e2e8f0;
+            font-size: 1.1rem;
+        }
+
+        .category-section {
+            margin: 4rem 0;
+            padding: 2rem 1rem;
+            background: #f8fafc;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 4rem 1rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .tool-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">DigitalToolKit</div>
+            <div class="nav-links">
+                <a href="#tools">Tools</a>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <button class="btn-login">Login</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Your All-in-One Digital Solution</h1>
+        <p>Convert, edit, and optimize files with our free online tools</p>
+        
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search for tools...">
+            <i class="fas fa-search"></i>
+        </div>
+    </section>
+
+    <section class="tool-grid">
+        <!-- Image Tools -->
+        <div class="tool-card">
+       <a href="/image-compressor" class="tool-link" aria-label="Image Compressor Tool">
+        <i class="fas fa-file-image tool-icon"></i>
+           <h3>Image Compressor</h3>
+           <p>Reduce image file size without quality loss</p>
+        </a>
+        </div>
+
+        <div class="tool-card">
+            <i class="fas fa-file-image tool-icon"></i>
+            <h3>Image Converter</h3>
+            <p>Convert between JPG, PNG, WEBP formats</p>
+        </div>
+
+        <!-- PDF Tools -->
+        <div class="tool-card">
+            <i class="fas fa-file-pdf tool-icon"></i>
+            <h3>PDF Compressor</h3>
+            <p>Reduce PDF file size while maintaining quality</p>
+        </div>
+
+        <div class="tool-card">
+            <i class="fas fa-file-pdf tool-icon"></i>
+            <h3>PDF to Word</h3>
+            <p>Convert PDF documents to editable Word files</p>
+        </div>
+
+        <!-- More tool cards -->
+    </section>
+
+    <section class="category-section">
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-bolt fa-2x"></i>
+                <h3>Fast Processing</h3>
+                <p>Quick file conversions with cloud-powered speed</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-shield-alt fa-2x"></i>
+                <h3>Secure & Private</h3>
+                <p>Automatic file deletion after processing</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-magic fa-2x"></i>
+                <h3>AI-Powered Tools</h3>
+                <p>Smart optimization algorithms for best results</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Categories</h4>
+                <ul>
+                    <li>Image Tools</li>
+                    <li>PDF Tools</li>
+                    <li>Document Tools</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
